@@ -1,11 +1,11 @@
-class die {
+class Die {
   private int sides;
   
-  public die(){
+  public Die(){
     this.sides = 6;
   } //END CONSTRUCTOR
     
-  public die(int sides){
+  public Die(int sides){
     this.sides = sides;
   } //END CONSTRUCTOR
   
@@ -14,21 +14,21 @@ class die {
   } //END FUNC
 } //END CLASS
 
-class dice extends die{
+class Dice extends Die{
    private int num;
    private int sides;
   
-  public dice(){
+  public Dice(){
     super();
     this.num = 1;
   } //END CONSTRUCTOR
   
-  public dice(int sides){
-    super(sides);
-    this.num = 1;
+  public Dice(int num){
+    super();
+    this.num = num;
   } //END CONSTRUCTOR
   
-  public dice(int num, int sides){
+  public Dice(int num, int sides){
     super(sides);
     this.num = num;
   } //END CONSTRUCTOR 
