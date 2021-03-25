@@ -1,1 +1,5 @@
 openweathermap-1e5ae6831a0fa16012e92d525385e2f5
+
+Classes - CapitalizeEachWord
+Fields - lowercaseeachword
+Functions - camelCaseEachWord
