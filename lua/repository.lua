@@ -70,3 +70,47 @@ function concat(tab1,tab2)
 	end
 	return tab1
 end
+
+--takes input (num n) and returns both n! and n
+function factorial(n)
+	assert(type(n) == "number","NOT A VALID NUMBER FOR FACTORIAL")
+	local x = 1
+	for i=1,n do
+		x = x * i
+	end
+	--io.stderr:write()
+	return x,n
+end
+
+--takes input (num n) and returns both n? and n
+function summatorial(n)
+	assert(type(n) == "number","NOT A VALID NUMBER FOR SUMMATORIAL")
+	local x = 0
+	for i=1,n do
+		x = x + i
+	end
+	--io.stderr:write()
+	return x,n
+end
+
+--takes input (num n) and returns both the square root of n and n
+function root(n)
+	assert(type(n) == "number","NOT A VALID NUMBER FOR ROOT")
+	--io.stderr:write()
+	return n^0.5, n
+end
+
+--takes input(num n) and returns both n rounded up to the next lowest integer and n
+function roof(n)
+	assert(type(n) == "number","NOT A VALID NUMBER FOR ROOFING")
+	--io.stderr:write()
+	return math.ceil(n),n
+end
+
+--takes input (num n) and returns both n rounded down to the next highest integer and n
+function flr(n)
+	assert(type(n) == "number","NOT A VALID NUMBER FOR FLOORING")
+	--io.stderr:write()
+	return math.floor(n),n
+end
+
