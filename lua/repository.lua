@@ -114,3 +114,13 @@ function flr(n)
 	return math.floor(n),n
 end
 
+--takes input (table t and num n) and returns true if n is within t else returns false
+function contains(t,n)
+	for _, value in ipairs(t) do
+		if value == n then
+				return true
+		end
+	end
+	--io.stderr:write(type(value).." "..tostring(n).."\n")
+	return false
+end
