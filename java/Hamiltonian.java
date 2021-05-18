@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 
 class Hamiltonian {
-  private int graphSize;
+  private int graphsize;
   private IndexPair start;
   private ArrayList<IndexPair> path;
   private ArrayList<IndexPair> cycle;
@@ -68,7 +68,7 @@ class Hamiltonian {
   
   //GETTERS
   public int getGraphSize(){
-    return this.graphSize;
+    return this.graphsize;
   }
   public IndexPair getStart(){
     return this.start;
