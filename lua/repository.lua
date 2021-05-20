@@ -1,3 +1,5 @@
+local repository = {}
+
 --[[
 Takes a table (of numbers) and returns the sum of all values in the table
 --]]
@@ -124,3 +126,5 @@ function contains(t,n)
 	--io.stderr:write(type(value).." "..tostring(n).."\n")
 	return false
 end
+
+return repository
