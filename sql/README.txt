@@ -42,3 +42,15 @@ WHERE column LIKE pattern
 #patterns appear as specific chars and wildcard '_' values
 #'12__' would return all values of 1200, 1201, 1299, 12aq, 12t6, etc.
 #'%' wildcard returns 0 or more chars so 'A%' returns all values that start with 'A'
+
+
+#return a range
+SELECT *
+FROM table
+WHERE column BETWEEN data AND data
+
+#multiple filters
+SELECT *
+FROM table
+WHERE data = value
+AND column < value
