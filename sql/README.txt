@@ -90,3 +90,8 @@ GROUP BY column;
 SELECT column, column, column
 FROM table
 GROUP BY 2;
+
+#when filtering by groups you must use HAVING instead of WHERE
+SELECT column, column, aggregate
+FROM table
+HAVING aggregate > value;
