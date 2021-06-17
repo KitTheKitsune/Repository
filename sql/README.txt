@@ -66,3 +66,27 @@ SELECT *
 FROM table
 LIMIT number;
 
+#case statement
+SELECT *,
+  CASE
+    WHEN condition THEN result
+    WHEN condition THEN result
+    ELSE result
+  END
+FROM table;
+
+#aggregate data
+SELECT SUM(column)
+FROM table
+WHERE condition;
+#other aggregates include: SUM(), COUNT(), MAX(), MIN(), AVG(), ROUND()
+
+#combines rows with similar data
+SELECT AVG(column)
+FROM table
+GROUP BY column;
+
+#GROUP BY can be used with aggregates, but is not fun to write out so you can use numbers to refer to which column
+SELECT column, column, column
+FROM table
+GROUP BY 2;
