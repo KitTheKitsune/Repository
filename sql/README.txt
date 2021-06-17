@@ -54,3 +54,15 @@ SELECT *
 FROM table
 WHERE data = value
 AND column < value
+
+#sort results
+SELECT * 
+FROM table
+ORDER BY name DESC;
+#DESC reverses the normal order
+
+#returns a limited number of results
+SELECT *
+FROM table
+LIMIT number;
+
