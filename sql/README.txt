@@ -95,3 +95,14 @@ GROUP BY 2;
 SELECT column, column, aggregate
 FROM table
 HAVING aggregate > value;
+
+#to pull data from two tables with shared columns
+SELECT * FROM table
+JOIN table
+ON table.column = table.column;
+#you can also use LEFT JOIN, RIGHT JOIN to keep non-matching data
+
+#perform a CROSS JOIN to pair every combination of one table to another
+SELECT table.column, table.column
+FROM table
+CROSS JOIN table;
