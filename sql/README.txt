@@ -111,3 +111,12 @@ CROSS JOIN table;
 SELECT * FROM table
 UNION
 SELECT * FROM table;
+
+#to combine aggregates you use WITH to create a table containing aggregate information
+WITH table AS (
+  SELECT foreign_key,
+  aggregate
+)
+SELECT * FROM table
+JOIN table
+ON table.primary_key = table.foreign_key;
