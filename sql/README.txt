@@ -106,3 +106,8 @@ ON table.column = table.column;
 SELECT table.column, table.column
 FROM table
 CROSS JOIN table;
+
+#if you have two tables with the same types of data in the exact same order you can combine them 
+SELECT * FROM table
+UNION
+SELECT * FROM table;
